@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.vinsofts.sotayvatly10"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "default"
+    productFlavors {
+        chemistry12{
+            buildConfigField("String","BASE_URL","\"https://www.dropbox.com/s/uqaum2jbtszm1e1/chemistry_12.zip?dl=1\"")
+            buildConfigField("String","NAME_FOLDER","\"Chemistry\"")
+            buildConfigField("String","PATH", "\"/" + "Chemistry" +"/" + "chemistry_12\"")
+            buildConfigField("String","DATABASE_NAME","\"hoahocDB.sqlite\"")
+            buildConfigField("String","PASSWORD_ZIP","\"sang0123\"")
+            buildConfigField("String","NAME_FILE_DOWNLOAD","\"chemistry_12.zip\"")
+        }
+        biology12 {
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/xe8ahgpazew3fed/biology_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"Biology\"")
+            buildConfigField("String", "PATH", "\"/" + "Biology" + "/" + "biology_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"sinhhocDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"biology_12.zip\"")
+        }
+        english12{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/ll5ubyzstxbmh52/english_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"English\"")
+            buildConfigField("String", "PATH", "\"/" + "English" + "/" + "english_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"tiengAnhDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"english_12.zip\"")
+        }
+        gdcd12{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/bk3rh8avztq2aa7/gdcd_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"GDCD\"")
+            buildConfigField("String", "PATH", "\"/" + "GDCD" + "/" + "gdcd_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"gdcdDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"gdcd_12.zip\"")
+        }
+        geography{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/v7nd8zb6cfd8oag/geography_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"Geography\"")
+            buildConfigField("String", "PATH", "\"/" + "Geography" + "/" + "geography_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"dialyDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"geography_12.zip\"")
+        }
+        history{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/deilmxhinv67s1l/history_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"History\"")
+            buildConfigField("String", "PATH", "\"/" + "History" + "/" + "history_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"lichsuDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"history_12.zip\"")
+        }
+        literary{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/wsy1aylsm4ig0gg/literary_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"Literary\"")
+            buildConfigField("String", "PATH", "\"/" + "Literary" + "/" + "literary_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"nguvanDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"literary_12.zip\"")
+        }
+        math{
+            buildConfigField("String", "BASE_URL", "\"https://www.dropbox.com/s/kcj5r7gro8yxszg/math_12.zip?dl=1\"")
+            buildConfigField("String", "NAME_FOLDER", "\"Math\"")
+            buildConfigField("String", "PATH", "\"/" + "Math" + "/" + "math_12\"")
+            buildConfigField("String", "DATABASE_NAME", "\"toanhocDB.sqlite\"")
+            buildConfigField("String", "PASSWORD_ZIP", "\"sang0123\"")
+            buildConfigField("String", "NAME_FILE_DOWNLOAD", "\"math_12.zip\"")
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'info.hoang8f:android-segmented:1.0.6'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.github.bmelnychuk:atv:1.2.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile group: 'net.lingala.zip4j', name: 'zip4j', version: '1.2.4'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile 'com.github.johnkil.print:print:1.2.2'
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    compile files('libs/gson-2.6.2.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+}

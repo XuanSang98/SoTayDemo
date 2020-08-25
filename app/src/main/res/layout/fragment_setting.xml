@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile12x"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:id="@+id/reSettingFragment">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cai_dat"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_header" />
+
+    <Switch
+        android:id="@+id/reSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_setting_row"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSetting"
+        android:layout_marginTop="20dp"
+        android:background="#A6424242"
+        android:padding="10dp"
+        android:text="@string/notification_text"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_setting" />
+
+    <RelativeLayout
+        android:id="@+id/reActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_setting_row"
+        android:layout_below="@+id/reSwitch"
+        android:layout_marginTop="15dp"
+        android:background="#A6424242"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/hinh_nen"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_setting" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/forward2x" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rePrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_setting_row"
+        android:layout_below="@+id/reActivity"
+        android:layout_marginTop="15dp"
+        android:background="#A6424242"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/primacy"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_setting" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/forward2x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_setting_row"
+        android:layout_below="@+id/rePrivacy"
+        android:layout_marginTop="15dp"
+        android:background="#A6424242"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/email_to_us"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_setting" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/forward2x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_setting_row"
+        android:layout_below="@+id/reEmail"
+        android:layout_marginTop="15dp"
+        android:background="#A6424242"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/more_app"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_setting" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/forward2x" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

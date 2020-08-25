@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reFragmentHome">
+
+
+    <RelativeLayout
+        android:id="@+id/reHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageButton
+            android:id="@+id/imgBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/image_change_activity2x" />
+
+        <TextView
+            android:id="@+id/txtFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/imgShare"
+            android:layout_toRightOf="@+id/imgBackground"
+            android:gravity="center"
+            android:text="@string/trangchu_header"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_header" />
+
+        <ImageButton
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/share_nav_22_082x" />
+    </RelativeLayout>
+
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/reHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        custom:arc_bottom_text_size="15dp"
+        custom:arc_finished_color="#fc510e"
+        custom:arc_progress="12"
+        custom:arc_stroke_width="15dp"
+        custom:arc_text_color="#FFF"
+        custom:arc_unfinished_color="#4DFFFFFF" />
+
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segmented3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arc_progress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:checkedButton="@+id/btnLastest"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="1dp"
+        segmentedgroup:sc_checked_text_color="#696969"
+        segmentedgroup:sc_corner_radius="5dp"
+        segmentedgroup:sc_tint_color="#FFF">
+
+        <RadioButton
+
+            android:id="@+id/btnLastest"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/lastest"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/btnHighest"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/hightest"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/btnLowest"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/lowest"
+            android:textSize="12sp" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/segmented3"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lstCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

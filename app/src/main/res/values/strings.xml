@@ -1,0 +1,75 @@
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+
+    <string name="str_btn_load">Load Fragment</string>
+    <string name="str_tv_fragment">This is a fragment</string>
+    <string name="lastest">Gần đây</string>
+    <string name="hightest">Cao nhất</string>
+    <string name="lowest">Thấp nhất</string>
+    <string name="trangchu_header">TRANG CHỦ</string>
+    <string name="trang_chu">Trang chủ</string>
+    <string name="noi_dung">Nội dung</string>
+    <string name="yeu_thich">Yêu thích</string>
+    <string name="huong_dan">Hướng dẫn</string>
+    <string name="cai_dat">Cài đặt</string>
+    <string name="share_via">Chia sẻ qua</string>
+    <string name="xoa_node">XÓA</string>
+    <string name="title_note">Ghi chú</string>
+    <string name="hoan_thanh_note">Xong</string>
+    <string name="tim_kiem">Tìm kiếm&#8230;</string>
+    <string name="da_xoa">Đã xóa</string>
+    <string name="warning_when_delete">Bạn có muốn xóa bài này không?</string>
+    <string name="ok_dialog">Đồng ý</string>
+    <string name="cancel_dialog">Hủy</string>
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_mail">&#xe0e1;</string>
+    <string name="ic_add">&#xe006;</string>
+    <string name="ic_close">&#xe048;</string>
+    <string name="ic_email">&#xe087;</string>
+    <string name="background">HÌNH NỀN</string>
+    <string name="mac_dinh">Mặc định</string>
+    <string name="library">Thư viện</string>
+    <string name="ic_folder">&#xe09d;</string>
+    <string name="ic_person">&#xe105;</string>
+    <string name="ic_bookmark">&#xe022;</string>
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="notification_text">Nhắc lịch học</string>
+    <string name="hinh_nen">Hình nền</string>
+    <string name="primacy">Chính sách bảo mật</string>
+    <string name="default_text">Mặc định</string>
+    <string name="size_text">Cỡ chữ : %1$s</string>
+    <string name="email_to_us">Liên hệ với chúng tôi</string>
+    <string name="more_app">More app</string>
+    <string name="ic_news">&#xe0f6;</string>
+    <string name="privacy">Chính sách bảo mật</string>
+    <string name="link_baitap123">http://www.baitap123.com/</string>
+    <string name="link_baitap123_nohttp">www.baitap123.com</string>
+    <string name="ic_bold">&#xe020;</string>
+    <string name="ic_earth">&#xe086;</string>
+    <string name="bai_tap_123">Bài tập 123</string>
+
+
+
+    <string name="rate_app_title">Ủng hộ ứng dụng</string>
+    <string name="rate_app_content">Nếu ứng dụng hữu ích với bạn, hãy vui lòng dành chút thời gian để đánh giá nó trên store.
+    Nó sẽ không mất nhiều hơn một phút. Đó là động lực để chúng tôi tiếp tục phát triển nhiều ứng dụng hữu ích hơn. Cảm ơn sự quan tâm của bạn!</string>
+    <string name="default_brightness">Độ sáng mặc định</string>
+    <string name="lesson">Bài học</string>
+    <string name="no_thanks">Không, cảm ơn</string>
+    <string name="reminder_later">Nhắc nhở sau</string>
+    <string name="rate_now">Đánh giá ngay</string>
+
+    <string name="banner">ca-app-pub-1307704432713748/8813810515</string>
+    <string name="inter">ca-app-pub-1307704432713748/2767276914</string>
+
+    <string name="developed_by">www.baitap123.com\nv1.0</string>
+    <string name="app_name">Sổ tay Vật lý 10</string>
+    <string name="share_body">"Tổng hợp mọi kiến thức Vật lý 10 trong một ứng dụng. Nắm trọn kiến thức dễ dàng với "Sổ tay Vật lý 10"\n
+ &#8212;> ANDROID STORE: https://play.google.com/store/apps/details?id=com.vinsofts.sotayvatly10
+ \nCùng Baitap123.com vươn tới cánh cửa tri thức."</string>
+    <string name="share_subject">Chia sẻ ứng dụng \"Sổ tay Vật lý 10\"</string>
+
+
+
+</resources>

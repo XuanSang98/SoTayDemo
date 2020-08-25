@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_still_14"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40000000" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"/>
+
+    <RadioGroup
+
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:checkedButton="@+id/btnContent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/change_home"
+            android:gravity="center"
+            android:text="@string/trang_chu"
+            android:textColor="#696969"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/btnContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/change_content"
+            android:gravity="center"
+            android:text="@string/noi_dung"
+            android:textColor="#696969"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/change_favorite"
+            android:gravity="center"
+            android:text="@string/yeu_thich"
+            android:textColor="#696969"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/btnTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/change_tips"
+            android:gravity="center"
+            android:text="@string/huong_dan"
+            android:textColor="#696969"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/btnSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/change_setting"
+            android:gravity="center"
+            android:text="@string/cai_dat"
+            android:textColor="#696969"
+            android:textSize="11sp" />
+    </RadioGroup>
+</LinearLayout>

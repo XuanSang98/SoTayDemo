@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_light"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_brightness_full" />
+
+        <ImageView
+            android:id="@+id/imv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_brightness_min" />
+
+        <SeekBar
+            android:id="@+id/seekbar_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/imv_max"
+            android:layout_toRightOf="@+id/imv_min"
+            android:max="100" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.3"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_light"
+        android:padding="12dp">
+
+        <CheckBox
+            android:id="@+id/cb_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:checked="true"
+            android:text="@string/default_brightness" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/grey_light"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="12dp"-->
+        <!--android:weightSum="100">-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:background="?selectableItemBackgroundBorderless"-->
+            <!--android:id="@+id/imv_theme_1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_weight="20"-->
+            <!--android:src="#ffffcc"-->
+            <!--app:civ_border_color="@color/grey"-->
+            <!--app:civ_border_width="1px" />-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:background="?selectableItemBackgroundBorderless"-->
+            <!--android:id="@+id/imv_theme_2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_weight="20"-->
+            <!--android:src="#faf4e89c"-->
+            <!--app:civ_border_color="@color/grey"-->
+            <!--app:civ_border_width="1px" />-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:background="?selectableItemBackgroundBorderless"-->
+            <!--android:id="@+id/imv_theme_3"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_weight="20"-->
+            <!--android:src="@color/black"-->
+            <!--app:civ_border_color="@color/grey"-->
+            <!--app:civ_border_width="1px" />-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/imv_theme_4"-->
+            <!--android:background="?selectableItemBackgroundBorderless"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_weight="20"-->
+            <!--android:src="@color/white"-->
+            <!--app:civ_border_color="@color/grey"-->
+            <!--app:civ_border_width="1px" />-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/imv_theme_5"-->
+
+            <!--android:background="?selectableItemBackgroundBorderless"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_weight="20"-->
+            <!--android:rotation="20"-->
+            <!--android:src="@drawable/ic_brightness_2"-->
+            <!--android:tint="@color/grey"-->
+            <!--app:civ_border_color="@color/grey"-->
+            <!--app:civ_border_width="1px" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+         android:alpha="0.2"
+        android:background="@drawable/bg_shadow" />
+</LinearLayout>

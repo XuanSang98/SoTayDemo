@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#80000000">
+
+    <com.github.lzyzsd.circleprogress.CircleProgress
+        android:layout_margin="10dp"
+        android:id="@+id/circle_progress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        custom:circle_text_size="12sp"
+        custom:circle_finished_color="#fc510e"/>
+    <TextView
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/circle_progress"
+        android:textColor="#FFF"
+        android:id="@+id/tvCategoryName"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vat Ly"
+        android:textSize="16sp"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

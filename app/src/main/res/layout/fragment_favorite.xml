@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearFavorite">
+
+    <RelativeLayout
+        android:id="@+id/reHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageButton
+            android:id="@+id/imgBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/image_change_activity2x" />
+
+        <TextView
+            android:id="@+id/txtFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/imgShare"
+            android:layout_toRightOf="@+id/imgBackground"
+            android:gravity="center"
+            android:text="@string/yeu_thich"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_header" />
+
+        <ImageButton
+            android:id="@+id/imgShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/share_nav_22_082x" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_below="@+id/reHeader"
+        android:id="@+id/tvBaiTap123"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/link_baitap123"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+         />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_below="@+id/reHeader"
+        android:id="@+id/lvFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
